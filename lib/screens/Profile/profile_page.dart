@@ -85,7 +85,7 @@ class ProfilePage extends StatelessWidget {
                                 ],
                               ),
                               Text(
-                                '+251 925002580',
+                                '+251 925002580'.trim(),
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               )
                             ],
@@ -98,16 +98,20 @@ class ProfilePage extends StatelessWidget {
                                   IconButton(
                                       icon: Icon(Icons.location_on_outlined),
                                       onPressed: () {}),
-                                  Text(
-                                    'Address',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
+                                  Flexible(
+                                    child: Text(
+                                      'Address',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
                                   )
                                 ],
                               ),
-                              Text(
-                                'Bole road Addis Ababa ,Ethiopia',
-                                style: TextStyle(fontWeight: FontWeight.bold),
+                              Flexible(
+                                child: Text(
+                                  'Bole road Addis Ababa ,Ethiopia',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                               )
                             ],
                           ),

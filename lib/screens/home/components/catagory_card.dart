@@ -41,21 +41,26 @@ class CatagoryCard extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: SizedBox(
                           width: double.infinity,
-                          child: Container(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: kDefaultPaddin * 2,
-                                  vertical: kDefaultPaddin * 0.5),
-                              decoration: BoxDecoration(
-                                color: bgcolor,
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              child: Text(
-                                catagory.catagoryName,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                              )),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                  padding: EdgeInsets.symmetric(
+                                      // horizontal: kDefaultPaddin * 0.5,
+                                      vertical: kDefaultPaddin * 0.5),
+                                  decoration: BoxDecoration(
+                                    color: bgcolor,
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  child: Text(
+                                    catagory.catagoryName.trim(),
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                            ],
+                          ),
                         )),
                   ],
                 )),

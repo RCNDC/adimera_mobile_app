@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 class ApiManager {
   Future<MainProduct> getProduct() async {
-    var url = Uri.parse('http://192.168.1.6:3000/user/getAllProducts/0');
+    var url = Uri.parse('https://api.adimera.com/user/getAllProducts/0');
     var productModel;
     try {
       var client = http.Client();
@@ -25,7 +25,7 @@ class ApiManager {
   }
 
   Future<ProductImage> getProductImage() async {
-    var url = Uri.parse('http://192.168.1.6:3000/user/getProductImages/172');
+    var url = Uri.parse('https://api.adimera.com/user/getProductImages/172');
     var productimageModel;
     try {
       var client = http.Client();
@@ -43,7 +43,7 @@ class ApiManager {
   }
 
   static Future<Catagory> getCatagory() async {
-    var url = Uri.parse('http://192.168.1.6:3000/user/getAllCatagory');
+    var url = Uri.parse('https://api.adimera.com/user/getAllCatagory');
     var catagoryModel;
     try {
       var client = http.Client();

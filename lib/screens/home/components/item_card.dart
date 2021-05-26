@@ -41,6 +41,8 @@ class ItemCard extends StatelessWidget {
                           tag: "${product.id}",
                           child: Image.asset(
                             "assets/icons/logo.png",
+                            // height: 260,
+                            // width: 240,
                           )),
                     ),
                     Align(
@@ -68,24 +70,23 @@ class ItemCard extends StatelessWidget {
                   ],
                 )),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
-                child: Text(
-                  // products is out demo list
-                  product.name,
-                  style: TextStyle(color: kTextLightColor),
-                ),
+          Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Center(
+              child: Text(
+                // products is out demo list
+                product.name.trim(),
+                style: TextStyle(color: kTextLightColor),
               ),
-              Text(
-                "\$${product.price}",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              )
-            ],
+            ),
           ),
+          Center(
+            child: Text(
+              "\$${product.price.trim()}",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
+          // )
         ],
       ),
     );
