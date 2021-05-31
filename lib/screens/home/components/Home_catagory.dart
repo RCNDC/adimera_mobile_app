@@ -13,7 +13,7 @@ class _HomeCatagoryState extends State<HomeCatagory> {
   late Future<Catagory> catagory;
   @override
   void initState() {
-    catagory = ApiManager.getCatagory();
+    catagory = ApiManager().getCatagory();
     super.initState();
   }
 

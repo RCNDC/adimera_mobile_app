@@ -17,7 +17,7 @@ class _CatagoriesState extends State<Catagories> {
   late Future<Catagory> catagory;
   @override
   void initState() {
-    catagory = ApiManager.getCatagory();
+    catagory = ApiManager().getCatagory();
     super.initState();
   }
 

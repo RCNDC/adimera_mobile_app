@@ -42,7 +42,7 @@ class ApiManager {
     return productimageModel;
   }
 
-  static Future<Catagory> getCatagory() async {
+  Future<Catagory> getCatagory() async {
     var url = Uri.parse('https://api.adimera.com/user/getAllCatagory');
     var catagoryModel;
     try {

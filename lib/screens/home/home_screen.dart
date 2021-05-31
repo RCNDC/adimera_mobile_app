@@ -5,6 +5,7 @@ import 'package:adimera_mobile_app/screens/home/components/Drawer.dart';
 import 'package:adimera_mobile_app/screens/home/components/Home_catagory.dart';
 import 'package:adimera_mobile_app/screens/home/components/Search_deligates.dart';
 import 'package:adimera_mobile_app/screens/Profile/profile_page.dart';
+import 'package:adimera_mobile_app/screens/home/components/home_content.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   var _currentPage = 0;
   final _pages = [
-    HomeCatagory(),
+    HomeContent(),
+    // HomeCatagory(),
     ProfilePage(),
     CartScreen(),
     WishlistScreen(),
